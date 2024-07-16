@@ -4,6 +4,10 @@ import pt.org.dio.bootcamp.desafio.modelagemiphone.*;
 import java.util.Scanner;
 
 /** Classe principal.
+  * Descrição: Desafio de abstração da modelagem de um iPhone, usando UML e java.
+  * Versão: 0.0
+  * Autor: Slvio Antunes da Silva Júnior
+  * Recife, 15 de julho de 2024 
   */
 
 public class IPhone {
