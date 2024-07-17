@@ -1,4 +1,4 @@
-package pt.org.dio.bootcamp.desafio.modelagemiphone.funcionalidades.reprodutormusical;
+package pt.org.dio.desafio.bootcamp.modelagemiphone.funcionalidades.reprodutormusical;
 
 /** Essa interface representa as funções de reproduzir uma música como um iPad.
   * Não foi feita uma abstração completa de um iPad pois o exercício trata-se de uma abstração básica do iPad.

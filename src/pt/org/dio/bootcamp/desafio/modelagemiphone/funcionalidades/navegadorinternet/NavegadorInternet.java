@@ -1,4 +1,4 @@
-package pt.org.dio.bootcamp.desafio.modelagemiphone.funcionalidades.navegadorinternet;
+package pt.org.dio.desafio.bootcamp.modelagemiphone.funcionalidades.navegadorinternet;
 
 /** Essa interface representa as funções de um navegador de internet.
   * Não foi feita uma abstração completa de um navegador de internet pois o exercício trata-se de uma abstração básica do navegador de internet.
