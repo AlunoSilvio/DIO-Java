@@ -1,23 +1,46 @@
 package pt.org.dio.desafio.bootcamp.bancodigital.contas;
 
-public interface Conta {
+public abstract class Conta {
     
-    private int agencia;
+    private static final short AGENCIA_CENTRAL =1;
+    private static int CONTA = 1;
+    private short agencia;
     private int conta;
-    private doble saldo;
+    private double saldo;
 
-    public void Conta (int agencia, int conta){
+    public void Conta (shorte agencia){
 
         this.agencia = agencia;
-        this conta = conta;
+        this.conta = CONTA++;
     }
 
-    public void setSaldo (double saldo) {
+    public int getConta () {
+        return this.conta;
+    }
+
+    public short getAgencia () {
+        return this.agencia;
+    }
+
+    private void setSaldo (double saldo) {
         this.saldo = saldo;
     }
 
-    public String getSaldo () {
+    private double getSaldo () {
         return this.saldo;
+    }
+
+    public double sacar (double saque) {
+        return this.setSaldo (this.getSaldo() -= saque);
+    }
+
+    public double depositar (double deposito) {
+       return this.setSaldo (this.getSaldo() += deposito);
+    }
+
+   public double transferencia (double transferencia, Banco banco, Agencia agencia, Conta conta, String nome) {
+        System.out.println("R$ " + transferencia + " transferido para " + nome + ", Banco: " + banco + " Agência: " + agencia + " Conta: " + conta);
+        return this.setSaldo (this.getSaldo() -= saque);
     }
 
 }

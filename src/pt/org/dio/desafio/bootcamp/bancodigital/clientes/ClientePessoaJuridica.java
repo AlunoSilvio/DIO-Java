@@ -1,5 +1,5 @@
 package pt.org.dio.desafio.bootcamp.bancodigital;
 
-public class ClientePessoaJuridica {
+public class ClientePessoaJuridica extends Cliente {
     
 }
